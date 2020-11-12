@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.modal-header, h4, .close {
+    background-color: #000000;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+}
+.modal-footer {
+    background-color: #f9f9f9;
+}
+.btn-success{
+    background-color: #000000;
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus{
+    background-color: #5D5D5D !important;
+}
+.container{
+    color: #000000;
+}
+.title{
+    padding: 60px;
+}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/background_alt.jpg");
+    height: 70%;
+}
+@media screen and (max-width: 600px){
+    .bgimg{
+        background-image: url("img/background_phone_alt.jpg");
+        width: auto;
+    }
+    .title{
+        text-align: center;
+        padding: 0px;
+    }
+}

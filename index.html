@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Titulo de Página</title>
+</head>
+<body>
+  <div class="bgimg">
+    <nav class="navbar navbar-inverse"> 
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">LAENNEC</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Quiénes Somos</a></li>
+              <li><a href="#">Dónde Estamos</a></li>
+              <li><a href="#">Contactanos</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" id="myBtn"><span class="glyphicon glyphicon-user"></span> Ingresar</a></li>
+              <li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Registrate</a></li>
+            </ul>
+              <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+                  </div>
+                  <div class="modal-body" style="padding:40px 50px;">
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+                        <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                        <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" value="" checked>Remember me</label>
+                      </div>
+                        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <p>Not a member? <a href="register.html">Sign Up</a></p>
+                    <p>Forgot <a href="#">Password?</a></p>
+                  </div>
+                </div>                
+              </div>
+            </div>               
+          </div>
+        </div>
+      </nav>
+      <div class="title">
+        <h1>Laennec</h1>
+        <h2>Estetoscopio Digital</h2>
+      </div>
+    </div>
+      <div class="container">
+        <h2 class="text-center">Diseñado por Estudiantes</h2>
+        <p class="text-center">Laennec es un estetoscopio digital desarrollado en el año 2019 por estudiantes de Ingeniería Electrónica de la Universidad Tecnológica Nacional, Facultad Regional Buenos Aires (<a href="https://www.frba.utn.edu.ar/" target="_blank">UTN-FRBA</a>) para la asignatura Informática II en el contexto del Trabajo Práctico Final Obligatorio.</p>
+        <a href="about.html">
+          <button type="button" class="btn btn-success center-block">Conozca más</button>
+        </a>        
+      </div>
+      <div class="container">
+        <br><br><br>
+        <p>El proyecto consiste en la adaptación de un estetoscopio convencional digitalizando la señal y pudiendo visualizarla mediante una interfaz de usuario. De esta forma, se pueden registrar y guardar diferentes mediciones, asociarlas con los distintos usuarios, detectar anomalías gracias a la comparación de las señales obtenidas con mediciones anteriores o con mediciones de muestra.</p>
+        <h3>HISTORIA DEL ESTETOSCOPIO</h3>
+        <p>En 1816, el médico francés René Laennec inventó el primer estetoscopio usando un tubo de papel largo,
+        enrollado para canalizar el sonido del pecho del paciente a la oreja. Las versiones varían sobre
+        exactamente cómo Laennec creó su invención, pero estaba claro desde el principio que las propiedades
+        acústicas del tubo mejoraron en gran medida la capacidad de Laennec de oír los sonidos vitales del corazón y de los pulmones. Laennec acuñó el nombre de "estetoscopio" a partir de dos palabras griegas: stethos (pecho) y skopein (para ver u observar). También llamó a su método de uso del estetoscopio
+        "auscultación" de "auscultare" (escuchar).</p>
+        <p>Veinticinco años más tarde, George P. Camman de Nueva York, desarrolló el primer estetoscopio con un
+        audífono para cada oído. Este diseño sería utilizado durante más de 100 años, con muy pocas modificaciones. </p>
+        <p>No fue hasta la década de 1960 que el Dr. David Littmann, profesor de la Escuela de Medicina de Harvard, distinguido cardiólogo y autoridad internacional reconocida en el electrocardiograma, patentó un nuevo estetoscopio revolucionario con muy mejorado rendimiento acústico. Él ayudó a transformar un dispositivo  de escucha simple en una poderosa herramienta de diagnóstico.</p>
+        <p>Habiendo profundizado y conociendo mejor la historia de un dispositivo tan simple, esencial y extremadamente útil, decidimos involucrarnos en esta temática, ya que la visualización de esta señal nos
+        permite entender mejor lo que pasa en nuestro cuerpo, detectar alguna anomalía más rápido visualmente,
+        comparar señales, entre otras cosas.</p>
+        <p>Si bien los estetoscopios digitales se encuentran en el mercado hace ya unos cuantos años (con precios
+        realmente elevados), el primer estetoscopio digital completamente inalámbrico fue inventado recién en 2013. Hoy queremos presentar nuestro estetoscopio que, además de mostrar la señal del corazón en vivo y en directo en una computadora a través de una conexión WiFi, también permite tomar grabaciones, que serán almacenadas en una tarjeta MicroSD, para luego poder visualizarlas con tranquilidad en la computadora o dispositivo móvil, para poder comparar señales entre sí o simplemente hacer un estudio en profundidad del paciente en cuestión.</p>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="js/scripts.js"></script>
+</body>
+</html>
