@@ -6,44 +6,45 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Titulo de Página</title>
 </head>
 <body>
     <div class="container">
-        <h2>Registration Form</h2>
+        <h2 class="text-center">Formulario de Registro Laennec</h2>
         <form id="vue" action="show_data.html">
             <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                <label for="name">Nombre:</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre..." name="name">
             </div>
             <div class="form-group">
-                <label for="surname">Surname:</label>
-                <input type="text" class="form-control" id="surname" placeholder="Enter surname" name="surname">
+                <label for="surname">Apellido:</label>
+                <input type="text" class="form-control" id="surname" placeholder="Ingrese su apellido..." name="surname">
             </div>
             <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre de usuario..." name="username">
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email..." name="email">
             </div>
             <div class="form-group">
-                <label for="country">Country:</label>
+                <label for="country">País:</label>
                 <select name="country" id="country" class="form-control">
                     <option v-for="country in countries">{{country}}</option>
                 </select>                
             </div>
             <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                <label for="pwd">Contraseña:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Ingrese su contraseña..." name="pwd">
             </div>
             <div class="form-group">
-                <label for="r-pwd">Confirm Password:</label>
-                <input type="password" class="form-control" id="r-pwd" placeholder="Confirm password" name="r-pwd">
+                <label for="r-pwd">Repetir Contraseña:</label>
+                <input type="password" class="form-control" id="r-pwd" placeholder="Confirme su contraseña..." name="r-pwd">
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-success center-block">Enviar</button>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
